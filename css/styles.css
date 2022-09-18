@@ -11,6 +11,7 @@
     --secondary-back-color :#F5F4FA;
     --first-icon-color : #AFB1B8;
     --hero-bcg-color :#C4C4C4;
+    --footer-bgc-link :rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -169,7 +170,6 @@ img {
     background-position: center;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url("../images/hero-back.jpg");
     background-repeat: no-repeat;
-    min-height: 600px;
     background-size: cover;
 }
 
@@ -291,7 +291,6 @@ img {
 }
 /* друга  секція  */
 
-
 .we-do {
         width: 1200px;
         padding-left: 15px;
@@ -373,7 +372,6 @@ img {
 
 .social {
     display: flex;
-    width: 270px;
     justify-content: center;
 }
 
@@ -411,10 +409,7 @@ img {
     fill: var(--white-color);
 }
 
-
 /* секція клієнтів */
-
-
 
 .container-clients {
         width: 1200px;
@@ -463,7 +458,6 @@ img {
 .clients-link:focus svg {
     fill: var(--accent-color);
 }
-
 
 /* footer */
 
@@ -535,8 +529,12 @@ img {
 }
 
 .footer-text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
     color: var(--white-color);
-    text-align: center;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -545,9 +543,11 @@ img {
     fill: var(--white-color);
 }
 
+.footer-item {
+background: var(--footer-bgc-link);
+}
 
 /* page portfolio */
-
 
 .container-menu {
         width: 1200px;

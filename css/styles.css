@@ -10,6 +10,7 @@
     --third-back-color :#2F303A;
     --secondary-back-color :#F5F4FA;
     --first-icon-color : #AFB1B8;
+    --hero-bcg-color :#C4C4C4;
 }
 
 body {
@@ -160,7 +161,7 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-color: var(--third-back-color);
+    background-color: var(--hero-bcg-color);
 
     margin-right: auto;
     margin-left: auto;

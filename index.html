@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>homework4</title>
+    <title>homework5</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
@@ -51,7 +51,7 @@
       <section class="section-hero">
         <div class="hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- Переваги студії -->
@@ -102,11 +102,22 @@
         <div class="we-do">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list">
-            <li class="list"><img src="./images/coding.jpg" alt="фото кодингу" width="370" /></li>
+            <li class="list"><img src="./images/coding.jpg" alt="фото кодингу" width="370" />
+              <div class="work-wraper">
+                <p class="work-details">Десктопні додатки</p>
+              </div>
+            </li>
             <li class="list">
               <img src="./images/phoneadaptation.jpg" alt="фото мобільної адаптації" width="370" />
+              <div class="work-wraper">
+                <p class="work-details">Мобільні додатки</p>
+              </div>
             </li>
-            <li class="list"><img src="./images/colorchoice.jpg" alt="фото вибору кольору" width="370" /></li>
+            <li class="list"><img src="./images/colorchoice.jpg" alt="фото вибору кольору" width="370" />
+              <div class="work-wraper">
+                <p class="work-details">Дизайнерські рішення</p>
+              </div>
+          </li>
           </ul>
         </div>
       </section>
@@ -336,5 +347,15 @@
           </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-close" data-modal-close>
+          <svg class="x-mark">
+            <use href="./images/icons.svg#icon-x-mark"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
